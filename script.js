@@ -123,22 +123,41 @@ const loveStory = {
   }
 
   /*
-    Keep intro visible long enough
-    for the balloons and text to play.
+    Wait for user click on "Step Inside 💖" button to play MPEG audio and enter site!
   */
+  const enterBtn = document.getElementById("enter-site-btn");
+  
+  function enterSite() {
+    // Play MPEG audio starting from 0:00 (bypasses browser autoplay policy)
+    const music = document.getElementById("background-music");
+    const musicBtn = document.getElementById("music-btn");
+    
+    if (music) {
+      music.currentTime = 0;
+      music.play().then(() => {
+        if (typeof musicStarted !== 'undefined') musicStarted = true;
+        if (musicBtn) {
+          musicBtn.classList.add("playing");
+          musicBtn.innerHTML = "🎵";
+        }
+      }).catch(err => {
+        console.log("Audio play deferred:", err);
+      });
+    }
 
-  setTimeout(() => {
-
+    // Hide loader & unlock scroll
     loader.classList.add("loader-hidden");
-
     setTimeout(() => {
-
       document.body.style.overflow = "auto";
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 400);
+  }
 
-    }, 900);
-
-  }, 8500);
-
+  if (enterBtn) {
+    enterBtn.addEventListener("click", enterSite);
+  } else {
+    setTimeout(enterSite, 8500);
+  }
 })();
 /* ============================================
    SCROLL REVEAL (IntersectionObserver)

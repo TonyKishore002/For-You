@@ -168,7 +168,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: relative;
   z-index: 2;
   text-align: center;
-  pointer-events: none;
+  pointer-events: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -208,6 +208,31 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   color: var(--pink-soft);
   opacity: 0;
   animation: intro-fade-up 1s 2.8s ease forwards;
+}
+
+.balloon-enter-btn {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  background: linear-gradient(135deg, #e05c9a, #93304f);
+  border: 2px solid #ff69b4;
+  padding: 16px 40px;
+  border-radius: 999px;
+  box-shadow: 0 0 30px rgba(255, 105, 180, 0.7);
+  cursor: pointer;
+  margin-top: 14px;
+  opacity: 0;
+  animation: intro-fade-up 1s 3.4s ease forwards;
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease), background 0.3s var(--ease);
+  pointer-events: auto;
+}
+
+.balloon-enter-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 45px rgba(255, 105, 180, 1);
+  background: linear-gradient(135deg, #ff69b4, #b82d5a);
 }
 
 @keyframes intro-fade-up {
