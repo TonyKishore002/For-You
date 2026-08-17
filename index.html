@@ -1,71 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>For You</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&family=Petit+Formal+Script&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&family=Petit+Formal+Script&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  
+
 
   <!-- COUPLE BACKGROUND -->
-<div class="couple-background"></div>
-<div class="background-overlay"></div>
+  <div class="couple-background"></div>
+  <div class="background-overlay"></div>
 
-<!-- BALLOON INTRO -->
-<div id="loader" class="loader">
+  <!-- BALLOON INTRO -->
+  <div id="loader" class="loader">
 
-  <div id="balloon-field" class="balloon-field"></div>
+    <div id="balloon-field" class="balloon-field"></div>
 
-  <div class="balloon-intro-content">
-    <p class="balloon-intro-line">
-      For the girl who made
-    </p>
+    <div class="balloon-intro-content">
+      <p class="balloon-intro-line">
+        For the girl who made
+      </p>
 
-    <p class="balloon-intro-main">
-      my world a little more beautiful...
-    </p>
+      <p class="balloon-intro-main">
+        my world a little more beautiful...
+      </p>
 
-    <div class="balloon-intro-heart">♥</div>
+      <div class="balloon-intro-heart">♥</div>
 
-    <p class="balloon-intro-final">
-      This is for you.
-    </p>
+      <p class="balloon-intro-final">
+        This is for you.
+      </p>
 
-    <button id="enter-site-btn" class="balloon-enter-btn">Step Inside 💖</button>
+      <button id="enter-site-btn" class="balloon-enter-btn">Step Inside 💖</button>
+    </div>
+
   </div>
 
-</div>
+  <!-- AMBIENT PARTICLE CANVAS -->
+  <canvas id="particle-canvas"></canvas>
 
-<!-- AMBIENT PARTICLE CANVAS -->
-<canvas id="particle-canvas"></canvas>
+  <main id="main-content" class="main-content">
 
-<main id="main-content" class="main-content">
-
-  <!-- HERO -->
-  <section class="hero" id="hero">
-    <div class="hero-glow" id="hero-glow"></div>
-    <div class="hero-content">
-      <p class="eyebrow reveal-item" data-reveal="fade-up">A LITTLE WEBSITE<br>MADE JUST FOR YOU</p>
-      <h1 class="hero-name reveal-item" data-reveal="fade-up" data-delay="150">
-        For You,<br><span id="her-name">Reena</span>
-      </h1>
-      <p class="hero-desc reveal-item" data-reveal="fade-up" data-delay="300">
-        I made this little corner of the internet<br>
-        just to remind you how special you are to me.
-      </p>
-      <a href="#letter" class="hero-btn reveal-item" data-reveal="fade-up" data-delay="450">Enter Our Story <span class="arrow">&#8595;</span></a>
-    </div>
-    <div class="scroll-indicator">
-      <span>SCROLL</span>
-      <span class="scroll-arrow">&#8595;</span>
-    </div>
-  </section>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-glow" id="hero-glow"></div>
+      <div class="hero-content">
+        <p class="eyebrow reveal-item" data-reveal="fade-up">A LITTLE WEBSITE<br>MADE JUST FOR YOU</p>
+        <h1 class="hero-name reveal-item" data-reveal="fade-up" data-delay="150">
+          For You,<br><span id="her-name">Reena</span>
+        </h1>
+        <p class="hero-desc reveal-item" data-reveal="fade-up" data-delay="300">
+          I made this little corner of the internet<br>
+          just to remind you how special you are to me.
+        </p>
+        <a href="#letter" class="hero-btn reveal-item" data-reveal="fade-up" data-delay="450">Enter Our Story <span
+            class="arrow">&#8595;</span></a>
+      </div>
+      <div class="scroll-indicator">
+        <span>SCROLL</span>
+        <span class="scroll-arrow">&#8595;</span>
+      </div>
+    </section>
 
 
 
@@ -75,7 +80,8 @@
       <div class="section-inner">
         <p class="section-number reveal-item" data-reveal="fade-up">02</p>
         <h2 class="section-title reveal-item" data-reveal="fade-up">A LETTER FOR YOU</h2>
-        <h3 class="section-heading reveal-item" data-reveal="fade-up">Some things are easier to write<br>than to say.</h3>
+        <h3 class="section-heading reveal-item" data-reveal="fade-up">Some things are easier to write<br>than to say.
+        </h3>
         <div class="letter-trigger-wrap reveal-item" data-reveal="fade-up" data-delay="200">
           <button class="open-letter-btn" id="open-letter-btn">Open My Letter &#10084;</button>
         </div>
@@ -87,8 +93,9 @@
       <div class="section-inner">
         <p class="section-number reveal-item" data-reveal="fade-up">03</p>
         <h2 class="section-title reveal-item" data-reveal="fade-up">LITTLE REASONS</h2>
-        <h3 class="section-heading reveal-item" data-reveal="fade-up">Tap a card to reveal a reason why you're special to me 💖</h3>
-        
+        <h3 class="section-heading reveal-item" data-reveal="fade-up">Tap a card to reveal a reason why you're special
+          to me 💖</h3>
+
         <div class="cards-deck-wrapper reveal-item" data-reveal="scale" data-delay="150">
           <div class="love-card" id="love-card">
             <div class="card-inner">
@@ -111,8 +118,9 @@
       <div class="section-inner">
         <p class="section-number reveal-item" data-reveal="fade-up">04</p>
         <h2 class="section-title reveal-item" data-reveal="fade-up">LOVE METER</h2>
-        <h3 class="section-heading reveal-item" data-reveal="fade-up">Keep tapping the heart to fill our love meter! 💕</h3>
-        
+        <h3 class="section-heading reveal-item" data-reveal="fade-up">Keep tapping the heart to fill our love meter! 💕
+        </h3>
+
         <div class="meter-container reveal-item" data-reveal="scale" data-delay="200">
           <div class="heart-tap-area" id="heart-tap-area">
             <span class="heart-pulse-icon" id="heart-pulse-icon">💖</span>
@@ -131,8 +139,9 @@
       <div class="section-inner">
         <p class="section-number reveal-item" data-reveal="fade-up">05</p>
         <h2 class="section-title reveal-item" data-reveal="fade-up">QUICK QUESTION</h2>
-        <h3 class="section-heading reveal-item" data-reveal="fade-up">Will you promise to stay by my side forever? 🥺👉👈</h3>
-        
+        <h3 class="section-heading reveal-item" data-reveal="fade-up">Will you promise to stay by my side forever?
+          🥺👉👈</h3>
+
         <div class="question-buttons reveal-item" data-reveal="fade-up" data-delay="200">
           <button class="answer-btn yes-btn" id="yes-btn">Yes, forever! 💖</button>
           <button class="answer-btn no-btn" id="no-btn">No 🙈</button>
@@ -147,45 +156,51 @@
       <div class="section-inner">
         <p class="section-number reveal-item" data-reveal="fade-up">06</p>
         <h2 class="section-title reveal-item" data-reveal="fade-up">FOREVER</h2>
-        <h3 class="forever-heading reveal-item" data-reveal="fade-up">If I had to choose again,<br>I'd still choose you.</h3>
+        <h3 class="forever-heading reveal-item" data-reveal="fade-up">If I had to choose again,<br>I'd still choose you.
+        </h3>
         <p class="forever-sub reveal-item" data-reveal="fade-up" data-delay="150">
           Today.<br>Tomorrow.<br>And every version of tomorrow.
         </p>
         <div class="forever-heart reveal-item" data-reveal="scale" data-delay="300">&#10084;</div>
-        <p class="forever-signature reveal-item" data-reveal="fade-up" data-delay="600">&mdash; <span id="forever-your-name">Tony</span></p>
+        <p class="forever-signature reveal-item" data-reveal="fade-up" data-delay="600">&mdash; <span
+            id="forever-your-name">Tony</span></p>
 
-        <button class="surprise-btn reveal-item" data-reveal="fade-up" data-delay="750" id="surprise-btn">One Last Thing&hellip;</button>
+        <button class="surprise-btn reveal-item" data-reveal="fade-up" data-delay="750" id="surprise-btn">One Last
+          Thing&hellip;</button>
       </div>
     </section>
   </main>
 
-<!-- LETTER MODAL -->
-<div class="letter-modal" id="letter-modal" role="dialog" aria-modal="true" aria-label="Letter">
-  <div class="letter-modal-backdrop" id="letter-modal-backdrop"></div>
-  <div class="letter-modal-paper">
-    <button class="letter-modal-close" id="letter-modal-close" aria-label="Close letter">&times;</button>
-    <div class="letter-modal-scroll">
-      <p class="letter-salutation">Dear <span id="letter-her-name">Reena</span>,</p>
-      <p class="letter-body" id="letter-body-text"></p>
-      <p class="letter-sign">Yours,<br><span id="letter-your-name">Tony</span></p>
+  <!-- LETTER MODAL -->
+  <div class="letter-modal" id="letter-modal" role="dialog" aria-modal="true" aria-label="Letter">
+    <div class="letter-modal-backdrop" id="letter-modal-backdrop"></div>
+    <div class="letter-modal-paper">
+      <button class="letter-modal-close" id="letter-modal-close" aria-label="Close letter">&times;</button>
+      <div class="letter-modal-scroll">
+        <p class="letter-salutation">Dear <span id="letter-her-name">Reena</span>,</p>
+        <p class="letter-body" id="letter-body-text"></p>
+        <p class="letter-sign">Yours,<br><span id="letter-your-name">Tony</span></p>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- FINAL SURPRISE OVERLAY -->
-<div class="surprise-overlay" id="surprise-overlay">
-  <canvas id="surprise-canvas"></canvas>
-  <div class="surprise-heart" id="surprise-heart">&#10084;</div>
-  <p class="surprise-message" id="surprise-message">You are loved.<br>More than these words could ever explain. &#10084;</p>
-  <button class="surprise-close" id="surprise-close" aria-label="Close">&times;</button>
-</div>
+  <!-- FINAL SURPRISE OVERLAY -->
+  <div class="surprise-overlay" id="surprise-overlay">
+    <canvas id="surprise-canvas"></canvas>
+    <div class="surprise-heart" id="surprise-heart">&#10084;</div>
+    <p class="surprise-message" id="surprise-message">You are loved.<br>More than these words could ever explain.
+      &#10084;</p>
+    <button class="surprise-close" id="surprise-close" aria-label="Close">&times;</button>
+  </div>
 
-<!-- BACKGROUND MUSIC -->
-<audio id="background-music" loop preload="auto" src="WhatsApp Audio 2026-08-17 at 10.48.31 PM.mpeg"></audio>
+  <!-- BACKGROUND MUSIC -->
+  <audio id="background-music" loop preload="auto"
+    src="WhatsApp Audio 2026-08-17 at 10.48.31 PM.mpeg"></audio>
 
-<!-- FLOATING MUSIC BUTTON -->
-<button class="music-btn" id="music-btn" aria-label="Toggle Music">🎵</button>
+  <!-- FLOATING MUSIC BUTTON -->
+  <button class="music-btn" id="music-btn" aria-label="Toggle Music">🎵</button>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>

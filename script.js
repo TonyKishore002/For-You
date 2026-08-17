@@ -12,7 +12,7 @@ const loveStory = {
   secondMemory: "A moment I'll always remember.",
   favoriteMemory: "One of the many reasons I smile.",
 
-  letter: `Hi Mrs. Tony....Ipdi koopda nalla irukku laa, Marriage panna mudiuma nu laa theriyala reena, but ennala mudinja varaikkum on kuda iruppa`
+  letter: `Hi Mrs. Tony....Ipdi koopda nalla irukku laa, Marriage panna mudiuma nu laa theriyala reena, but ennala mudinja varaikkum on kuda iruppa...Life laa naa kettathu nee naraiyaa thandhurukka reena...But naa thaa onakku onnumey tharala...Ennala mudinja varaikkum try pandra...for my wife ❤️...Solli romba naal achi laa...I Love You di😘❤️`
 };
 
 /* ============================================
